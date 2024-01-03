@@ -30,3 +30,13 @@ C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\obj\Debug\net7.0\refint\Shizuka
 C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\obj\Debug\net7.0\ShizukaSushi.pdb
 C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\obj\Debug\net7.0\ShizukaSushi.genruntimeconfig.cache
 C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\obj\Debug\net7.0\ref\ShizukaSushi.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\bin\Debug\net7.0\Humanizer.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi\bin\Debug\net7.0\System.CodeDom.dll

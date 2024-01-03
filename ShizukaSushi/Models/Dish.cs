@@ -2,19 +2,19 @@ namespace ShizukaSushi.Models;
 
 public class Dish
 {
-    public Guid Id {get;}
-    public string Name {get;}
-    public string Description {get;}
-    public DateTime LastModifiedDateTime {get;}
-    public List<string> Ingredients {get;}
+    public Guid Id { get; private set; }
+    public string Name { get; private set; }
+    public string Description { get; private set; }
+    public DateTime LastModifiedDateTime { get; private set; }
+    public List<string> Ingredients { get; private set; }
 
-    public Dish(Guid id, string name, string description, DateTime lastmodifieddatetime, List<string> ingredients)
+    private Dish(Guid Id, string Name, string Description, DateTime LastModifiedDateTime)
     {
-        this.Id = id;
-        this.Name = name;
-        this.Description = description;
-        this.LastModifiedDateTime = lastmodifieddatetime;
-        this.Ingredients = ingredients;
+        this.Id = Id;
+        this.Name = Name;
+        this.Description = Description;
+        this.LastModifiedDateTime = LastModifiedDateTime;
+        this.Ingredients = new List<string>();
     }
 
 }
