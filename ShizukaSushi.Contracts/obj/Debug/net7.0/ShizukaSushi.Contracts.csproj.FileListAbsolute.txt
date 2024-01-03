@@ -1,0 +1,12 @@
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\bin\Debug\net7.0\ShizukaSushi.Contracts.deps.json
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\bin\Debug\net7.0\ShizukaSushi.Contracts.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\bin\Debug\net7.0\ShizukaSushi.Contracts.pdb
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\obj\Debug\net7.0\ShizukaSushi.Contracts.csproj.AssemblyReference.cache
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\obj\Debug\net7.0\ShizukaSushi.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\obj\Debug\net7.0\ShizukaSushi.Contracts.AssemblyInfoInputs.cache
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\obj\Debug\net7.0\ShizukaSushi.Contracts.AssemblyInfo.cs
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\obj\Debug\net7.0\ShizukaSushi.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\obj\Debug\net7.0\ShizukaSushi.Contracts.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\obj\Debug\net7.0\refint\ShizukaSushi.Contracts.dll
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\obj\Debug\net7.0\ShizukaSushi.Contracts.pdb
+C:\Users\F.P.S\Desktop\ShizukaSushi\ShizukaSushi.Contracts\obj\Debug\net7.0\ref\ShizukaSushi.Contracts.dll
