@@ -6,11 +6,10 @@ namespace ShizukaSushi.DatabaseContext
     public class ShizukaDbContext : DbContext
     {
         public DbSet<Dish> Dishes { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public ShizukaDbContext(DbContextOptions<ShizukaDbContext> options) : base(options)
         {
-            optionsBuilder.UseMySql("Server=localhost;Port=3306;Database=shizukadb;Uid=root;Pwd=DB09Gennaio;", ServerVersion.AutoDetect("Server=localhost;Port=3306;Database=shizukadb;Uid=root;Pwd=DB09Gennaio;"));
         }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
