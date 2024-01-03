@@ -11,8 +11,8 @@ using ShizukaSushi.DatabaseContext;
 namespace ShizukaSushi.Migrations
 {
     [DbContext(typeof(ShizukaDbContext))]
-    [Migration("20240103210551_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240103213806_InitialCreate3")]
+    partial class InitialCreate3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

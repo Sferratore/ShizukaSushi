@@ -17,4 +17,13 @@ public class Dish
         this.Ingredients = new List<string>();
     }
 
+    public Dish(Guid Id, string Name, string Description, DateTime LastModifiedDateTime, List<string> Ingredients)
+    {
+        this.Id = Id;
+        this.Name = Name;
+        this.Description = Description;
+        this.LastModifiedDateTime = LastModifiedDateTime;
+        this.Ingredients = Ingredients;
+    }
+
 }
