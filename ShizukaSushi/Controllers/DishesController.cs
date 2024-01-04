@@ -23,9 +23,20 @@ public class DishesController : ControllerBase
     [HttpPost("/dishes")]
     public IActionResult CreateDish(CreateDishRequest request)
     {
-        Dish d = new Dish(Guid.NewGuid(), request.Name, request.Description, DateTime.UtcNow, request.Ingredients);
-        _context.Dishes.Add(d);
-        _context.SaveChanges();
+        try
+        {
+            Dish d = new Dish(Guid.NewGuid(), request.Name, request.Description, DateTime.UtcNow, request.Ingredients);
+            _context.Dishes.Add(d);
+            _context.SaveChanges();
+        }
+        catch (Exception ex)
+        {
+            return new ObjectResult(new { message = "An error occurred while processing your request." + ex.ToString() })
+            {
+                StatusCode = StatusCodes.Status500InternalServerError
+            };
+        }
+
         return Ok(request);
     }
 
@@ -54,6 +65,11 @@ public class DishesController : ControllerBase
     [HttpDelete("/dishes/{id:guid}")]
     public IActionResult DeleteDish(Guid id)
     {
+        Dish? d1 = _context.Dishes.Where(x => x.Id.Equals(id)).FirstOrDefault();
+        if (d1 != null)
+        {
+            _context.Dishes.Remove(d1);
+        }
         return Ok(id);
     }
 }
