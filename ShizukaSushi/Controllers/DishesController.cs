@@ -50,15 +50,26 @@ public class DishesController : ControllerBase
     [HttpPut("/dishes/{id:guid}")]
     public IActionResult UpdateDish(Guid id, UpdateDishRequest request)
     {
-        Dish? d1 = _context.Dishes.Where(x => x.Id.Equals(id)).FirstOrDefault();
-        if (d1 != null)
+        try
         {
-            _context.Dishes.Remove(d1);
+            Dish? d1 = _context.Dishes.Where(x => x.Id.Equals(id)).FirstOrDefault();
+            if (d1 != null)
+            {
+                _context.Dishes.Remove(d1);
+            }
+
+            Dish d2 = new Dish(id, request.Name, request.Description, DateTime.UtcNow, request.Ingredients);
+            _context.Dishes.Add(d2);
+            _context.SaveChanges();
+        }
+        catch (Exception ex)
+        {
+            return new ObjectResult(new { message = "An error occurred while processing your request." + ex.ToString() })
+            {
+                StatusCode = StatusCodes.Status500InternalServerError
+            };
         }
 
-        Dish d2 = new Dish(id, request.Name, request.Description, DateTime.UtcNow, request.Ingredients);
-        _context.Dishes.Add(d2);
-        _context.SaveChanges();
         return Ok(request);
     }
 
