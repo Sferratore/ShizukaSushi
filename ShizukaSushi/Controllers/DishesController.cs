@@ -32,7 +32,8 @@ public class DishesController : ControllerBase
     [HttpGet("/dishes/{id:guid}")]
     public IActionResult GetDish(Guid id)
     {
-        return Ok(id);
+        Dish? d = _context.Dishes.Where(x => x.Id.Equals(id)).FirstOrDefault();
+        return Ok(d);
     }
 
     [HttpPut("/dishes/{id:guid}")]
